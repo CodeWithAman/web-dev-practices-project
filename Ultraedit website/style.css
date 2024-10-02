@@ -1,35 +1,139 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html{
+
+html {
     width: 100%;
     height: 100%;
 }
-.logo img{
+
+.logo img {
     width: 170px;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Segoe UI';
     margin-top: 20px;
 }
-.right ul{
+
+.right ul {
     display: flex;
-    gap: 28px;
+    gap: 23px;
 }
-.right ul li{
+
+.right ul li {
     align-items: center;
     list-style: none;
     display: flex;
     cursor: pointer;
     font-size: 15px;
 }
-.right ul li span{
+
+.right ul li span {
     padding: 0 5px;
     opacity: .8;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 75px;
+    gap: 51px;
+}
+
+.first p {
+    font-size: 24px;
+    font-weight: 500;
+    width: 60vw;
+    text-align: center;
+    opacity: .9;
+}
+
+.first h1 {
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.first span strong {
+    font-weight: 700;
+}
+
+.btn {
+    padding: 12px 20px;
+    min-width: 260px;
+    min-height: 48px;
+    background-color: #00b6d1;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    top: -15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #059eb6dc;
+}
+
+.second {
+    max-width: 65vw;
+    margin: auto;
+}
+
+.green-btn {
+    background-color: #5cb85c;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin: 12px;
+}
+
+.item {
+    /* max-width: 290px; */
+    background-color: #f9f9f9;
+    padding: 16px;
+    text-align: center;
+    border-radius: 5px;
+}
+.item-lang{
+    padding-bottom: 48px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+.download :nth-child(2){
+    font-size: 24px;
+}
+.download{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.download img{
+    margin: 20px;
+}
+@media (max-width:1145px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
 }
