@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "poppins";
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            height: 100%;
+        }
+
+        .main {
+            background-color: rgb(255, 255, 255);
+            height: 85vh;
+            width: 30%;
+            position: relative;
+            left: 70vh;
+            margin: 20px;
+            padding: 20px 30px;
+            top: 38px;
+        }
+
+        .contant {
+            border: 1px solid grey;
+            height: 79vh;
+            border-radius: 18px;
+        }
+
+        .image {
+            background-image: url(image.png);
+            background-size: cover;
+            height: 240px;
+            border-radius: 20px;
+            margin: 10px;
+        }
+
+        .span {
+            margin: 20px;
+
+        }
+
+        .one,
+        .two {
+            margin: 18px;
+            opacity: .7;
+        }
+
+        .h2 {
+            margin: 20px;
+            opacity: .8;
+        }
+
+        .p {
+            margin: 20px;
+            line-height: 30px;
+            font-size: 17px;
+            opacity: .7;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .btn-style {
+            padding: 12px 20px;
+            border-radius: 20px;
+            background-color: rgba(164, 248, 248, 0.548);
+            color: blue;
+            font-weight: 800;
+            border: transparent;
+            cursor: pointer;
+            transition: .5s ease-in;
+            opacity: .7;
+        }
+
+        .btn-style:hover {
+            background-color: rgba(128, 128, 128, 0.548);
+            transition: .5s ease-out;
+            color: black;
+            font-weight: 600;
+
+        }
+
+        @media (max-width:500px) {
+            .main {
+                left: 50px;
+                width: 70vw;
+                height: 85vh;
+            }
+            .contant{
+                height: 79vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="contant">
+            <div class="image" </div>
+            </div>
+            <div class="span">
+                <span class="one">Nature</span>
+                <span class="two">Lake</span>
+            </div>
+            <div class="h2">
+                <h2>Lago di Braies<h2>
+            </div>
+            <div class="p">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sunt necessitatibus similique quasi?Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="btn">
+                <button class="btn-style">Read More</button>
+            </div>
+        </div>
+</body>
+
+</html>

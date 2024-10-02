@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+.logo img{
+    width: 170px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Segoe UI';
+    margin-top: 20px;
+}
+.right ul{
+    display: flex;
+    gap: 28px;
+}
+.right ul li{
+    align-items: center;
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+    font-size: 15px;
+}
+.right ul li span{
+    padding: 0 5px;
+    opacity: .8;
+}

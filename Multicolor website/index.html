@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolco web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: poppins;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navcolor: rgba(7, 151, 164, 0.644);
+            --maincolor: rgba(64, 207, 207, 0.505);
+            --navmar:20px;
+            --defmar:  20px auto;
+            --defpad: 12px;
+            --defopc:.7;
+            --herocolor:rgb(45, 248, 248);
+        }
+
+        body {
+            background-color: var(--maincolor);
+        }
+
+        .nav {
+            background-color: var(--navcolor);
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav ul li {
+            margin: var(--navmar);
+            list-style: none;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            color: white;
+            cursor: pointer;
+            transition: .3s  ease-in;
+        }
+
+        .nav ul li a:hover {
+            color: grey;
+            transition: .3s ease-out;
+        }
+
+        .hero {
+            border: 3px solid black;
+            margin: var(--defmar);
+            box-shadow: 2px 3px;
+        }
+        .hero{
+            background: var(--herocolor);
+            height: 550px;
+            width: 80vw;
+            cursor: pointer;
+            margin: var(--defmar);
+
+        }
+        .hero h1 {
+            text-align: center;
+            margin: var(--defmar);
+            padding: var(--defpad);
+        }
+
+        .hero p {
+            text-align: center;
+            font-size: 23px;
+            padding: var(--defpad);
+            opacity: var(--defopc);
+        }
+        @media (max-width:1400px){
+            .hero{
+             height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h1> --This is my first mulitcolor website --</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ratione natus magni tempora repellendus
+            nobis molestias consequuntur animi dolorum enim laboriosam voluptatibus, quibusdam praesentium suscipit.
+            Possimus qui ipsum vero? Quibusdam, maiores culpa dolor sapiente omnis voluptates, ullam minima similique
+            numquam libero facere. Iste obcaecati dolores, quam ab ipsam laborum? Nesciunt tempore adipisci voluptatum
+            necessitatibus fuga ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium assumenda quae
+            illo sapiente error placeat quibusdam tempora rem magnam in maiores voluptas, ratione omnis voluptate
+            voluptatem aliquam consequuntur inventore quis soluta earum a. Ipsa ullam fugit est repellat dicta
+            architecto at, officiis nostrum officia nesciunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ipsam, nostrum cumque eaque similique expedita voluptatibus obcaecati, fugiat culpa vero totam saepe tempore necessitatibus cupiditate, enim architecto optio illum odio aut provident iure molestias! Praesentium eligendi nemo tempora repudiandae rem magni, sed aspernatur beatae iste!
+        </p>
+
+    </div>
+</body>
+
+</html>

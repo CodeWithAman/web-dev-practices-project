@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: poppins;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        main {
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        .header {
+            position: sticky;
+            top: 0px;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .header ul {
+            display: flex;
+
+        }
+
+        ul li {
+            list-style: none;
+            padding: 8px;
+            margin: 0 8px;
+        }
+
+        ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 17px;
+            cursor: pointer;
+            transition: .3s ease-in;
+        }
+
+        li a:hover {
+            transition: .3s ease-in-out;
+            border: transparent;
+            color: grey;
+        }
+
+        .boxes {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1,
+        .box2 {
+            margin: 35px;
+            width: 40%;
+            height: 70vh;
+            border: 2px solid black;
+            text-align: center;
+            font-family: poppins;
+            border-radius: 20px;
+            font-size: 18px;
+            box-shadow: 2px -3px;
+            cursor: col-resize;
+            background-color: white;
+        }
+
+        .content {
+            width: 80vw;
+            margin: 40px auto;
+            height: 120px;
+            border: 2px solid black;
+            border-radius: 30px;
+            text-align: center;
+            font-family: poppins;
+            background-color: white;
+        }
+
+        footer {
+            background-color: black;
+            height: 10vh;
+            color: white;
+            text-align: center;
+            padding-top: 30px;
+            cursor: pointer;
+            transition: .3s ease-in;
+        }
+
+        .copyright:hover {
+            color: grey;
+            transition: .3s ease-out;
+        }
+
+        img {
+            bottom: 12px;
+            right: 23px;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="header">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Work</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="boxes">
+            <div class="box1">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facilis velit natus. Eaque
+                    cupiditate
+                    tempore modi culpa? Nisi in unde earum! Qui delectus atque odit officia id. Dolor molestiae nam
+                    pariatur
+                    neque, amet ad sunt incidunt rem debitis, dignissimos aliquid rerum cum. Voluptatem ex sequi, ea,
+                    mollitia illo eos dolore aut at maxime asperiores corrupti expedita culpa debitis. Accusantium
+                    explicabo
+                    molestias, suscipit saepe nemo accusamus voluptate dolorem fugit qui fugiat? A ab laboriosam illum?
+                    Totam doloremque recusandae cupiditate commodi corporis, fugiat ducimus aliquam sint tempore,
+                    consequuntur magnam dolore blanditiis? Facilis, repellendus dolorum, error cum modi nam, ad suscipit
+                    aut
+                    nulla ipsum temporibus! Totam perspiciatis error, fugiat vitae deleniti, architecto autem laborum
+                    labore
+                    ea culpa maiores facilis nihil odio repellat provident iste dignissimos illum veniam eos. Laboriosam
+                    cum
+                    pariatur aliquam! Eaque, esse magni beatae similique dolorem adipisci soluta laborum explicabo quia
+                    nobis officia quaerat sapiente illum delectus deserunt harum, tempora quasi dicta quo sequi. </p>
+            </div>
+
+            <div class="box2">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum facilis velit natus. Eaque
+                    cupiditate
+                    tempore modi culpa? Nisi in unde earum! Qui delectus atque odit officia id. Dolor molestiae nam
+                    pariatur
+                    neque, amet ad sunt incidunt rem debitis, dignissimos aliquid rerum cum. Voluptatem ex sequi, ea,
+                    mollitia illo eos dolore aut at maxime asperiores corrupti expedita culpa debitis. Accusantium
+                    explicabo
+                    molestias, suscipit saepe nemo accusamus voluptate dolorem fugit qui fugiat? A ab laboriosam illum?
+                    Totam doloremque recusandae cupiditate commodi corporis, fugiat ducimus aliquam sint tempore,
+                    consequuntur magnam dolore blanditiis? Facilis, repellendus dolorum, error cum modi nam, ad suscipit
+                    aut
+                    nulla ipsum temporibus! Totam perspiciatis error, fugiat vitae deleniti, architecto autem laborum
+                    labore
+                    ea culpa maiores facilis nihil odio repellat provident iste dignissimos illum veniam eos. Laboriosam
+                    cum
+                    pariatur aliquam! Eaque, esse magni beatae similique dolorem adipisci soluta laborum explicabo quia
+                    nobis officia quaerat sapiente illum delectus deserunt harum, tempora quasi dicta quo sequi.</p>
+            </div>
+        </div>
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo excepturi recusandae accusantium? Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Rem, repudiandae quaerat fuga recusandae possimus
+                iusto deserunt corporis minima modi, et corrupti ipsam praesentium? Id, maxime nulla! Veniam, sunt
+                ratione. Perspiciatis, eligendi provident cupiditate ratione rem quis, reprehenderit dolore, magni quo
+                totam officiis recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, ullam at
+                hic doloremque beatae molestias ab eaque culpa corporis voluptatum neque, tenetur doloribus? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+        <footer>
+            <div class="copyright">
+                &copy; 2024 YourCompany. All rights reserved.
+            </div>
+            <div class="logo"><img src="pngwing.com.png" width="40"></div>
+
+        </footer>
+    </main>
+</body>
+
+</html>
